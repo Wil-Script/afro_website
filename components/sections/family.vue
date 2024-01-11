@@ -39,8 +39,14 @@
             </div>
 
             <div class="mt-8 flex gap-1 sm:mt-14">
-                <div class=" w-2/3" @click="$emit('openContact')">
+                <!-- <div class=" w-2/3" @click="$emit('openContact')">
                     <AtomsOutlinedBtn :libelle="$t('waiting_list')" />
+                </div> -->
+                <div class=" w-2/3" @click="$emit('openContact')">
+                    <a href="#contact"
+                        class="flex items-center justify-center w-full py-3 bg-white font-bold rounded-full border border-noir">
+                        {{ $t('waiting_list') }}
+                    </a>
                 </div>
                 <div class="flex gap-1 w-1/3">
                     <a href="https://www.instagram.com/afrolingo.officiel"
