@@ -38,17 +38,17 @@
                 </p>
             </div>
 
-            <div class="mt-8 flex gap-1 sm:mt-14">
+            <div class="mt-8 flex flex-wrap gap-1 sm:mt-14">
                 <!-- <div class=" w-2/3" @click="$emit('openContact')">
                     <AtomsOutlinedBtn :libelle="$t('waiting_list')" />
                 </div> -->
-                <div class=" w-2/3">
+                <div class="w-full">
                     <a href="#contact"
                         class="flex items-center justify-center w-full py-3 bg-white font-bold rounded-full border border-noir">
                         {{ $t('waiting_list') }}
                     </a>
                 </div>
-                <div class="flex gap-1 w-1/3">
+                <!-- <div class="flex gap-1 w-1/3">
                     <a href="https://www.instagram.com/afrolingo.officiel"
                         class="flex items-center justify-center w-12 h-12 rounded-lg border border-noir">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
                                 fill="#141B34" />
                         </svg>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="w-full h-auto sm:col-start-9 sm:col-end-11 sm:grid sm:grid-rows-2 gap-5 sm:h-full">

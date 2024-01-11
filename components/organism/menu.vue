@@ -7,22 +7,22 @@
         <div class="hidden justify-between items-center h-full w-full sm:flex">
             <NuxtImg src="/afrolingo-logo-full.png" class="h-10" alt="flysoft logo" />
             <nav class="flex gap-4">
-                <a href="#home" class="text-sm">
+                <Nuxt-link to="/#home" class="text-sm">
                     {{ $t('home') }}
-                </a>
-                <a href="#features" class="text-sm">
+                </Nuxt-link>
+                <Nuxt-link to="/#features" class="text-sm">
                     {{ $t('feature') }}
-                </a>
-                <a href="#contact" class="text-sm">
+                </Nuxt-link>
+                <Nuxt-link to="/#contact" class="text-sm">
                     {{ $t('contact') }}
-                </a>
+                </Nuxt-link>
             </nav>
             <div class="w-[180px]" @click="$emit('openContact')">
                 <!-- <AtomsFullBtn :state="true" :libelle="$t('contact_us')" /> -->
-                <a href="#contact"
+                <Nuxt-link to="/#contact"
                     class="flex items-center justify-center w-full py-3 bg-noir text-white font-bold rounded-full">
                     {{ $t('contact_us') }}
-                </a>
+                </Nuxt-link>
             </div>
         </div>
     </div>
