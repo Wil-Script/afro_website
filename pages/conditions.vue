@@ -1,6 +1,15 @@
 <template>
     <OrganismMenu />
     <section class="px-5 sm:px-[15vw] py-14">
+        <Nuxt-link to="/" class="mt-16 px-5 py-2 flex items-center max-w-[200px] gap-2 bg-[#f5f5f5] rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                style="fill: rgba(0, 0, 0, 1);">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+            </svg>
+            <span class="text-sm mt-1">
+                {{ $t('back') }}
+            </span>
+        </Nuxt-link>
         <h1 class="mt-16 text-2xl font-bold">
             {{ $t('terms') }}
         </h1>
@@ -68,7 +77,7 @@
             <span class="font-bold">{{ $t('term_nine_title') }}</span>
             <p class=" text-grisTxt text-justify">
                 {{ $t('term_nine_p1') }} {{ $t('term_nine_p2') }}
-            
+
             </p>
         </div>
     </section>

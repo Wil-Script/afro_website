@@ -1,11 +1,17 @@
 <template>
-    <div class="px-5 w-full h-[60px] sm:h-[80px] sm:px-[10vw]">
-        <Nuxt-link to="/" class="flex justify-between items-center h-full w-full sm:hidden">
-            <NuxtImg src="/afrolingo-logo.png" class="h-10" alt="flysoft logo" />
-            <NuxtImg src="/afrolingo-text.png" class="h-5" alt="flysoft logo" />
-        </Nuxt-link>
+    <div class="px-5 w-full h-[60px] sm:h-[80px] sm:px-[10vw]" id="home">
+        <div class="flex justify-between items-center h-full w-full sm:hidden">
+            <Nuxt-link to="/">
+                <NuxtImg src="/afrolingo-logo.png" class="h-10" alt="flysoft logo" />
+            </Nuxt-link>
+            <Nuxt-link to="/">
+                <NuxtImg src="/afrolingo-text.png" class="h-5" alt="flysoft logo" />
+            </Nuxt-link>
+        </div>
         <div class="hidden justify-between items-center h-full w-full sm:flex">
-            <NuxtImg src="/afrolingo-logo-full.png" class="h-10" alt="flysoft logo" />
+            <Nuxt-link to="/">
+                <NuxtImg src="/afrolingo-logo-full.png" class="h-10" alt="flysoft logo" />
+            </Nuxt-link>
             <nav class="flex gap-4">
                 <Nuxt-link to="/#home" class="text-sm">
                     {{ $t('home') }}

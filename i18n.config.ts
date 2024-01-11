@@ -3,6 +3,7 @@ export default defineI18nConfig(() => ({
     locale: 'fr',
     messages: {
         en: {
+            back: 'Back to home',
             total: 'Africans languages available just for you.',
             header_title: 'Learn a language, discover a culture.',
             header_p: `Immerse yourself in the world of African languages. Learn one and let yourself be transported by its sounds, rhythms and stories.`,
@@ -99,6 +100,7 @@ export default defineI18nConfig(() => ({
 
         },
         fr: {
+            back: `Retour à l'accueil`,
             total: 'Langues africaines disponibles juste pour toi.',
             header_title: 'Apprendre une langue, découvrir une culture.',
             header_p: `Plongez dans l'univers des langues africaines. Apprenez-en une et laissez-vous transporter par ses sons, ses

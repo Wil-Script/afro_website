@@ -1,10 +1,22 @@
-<script setup>
-
+<script>
+export default {
+    data() {
+        return {
+            visible: false,
+        }
+    },
+    mounted() {
+        setInterval(() => {
+            this.visible = !this.visible;
+            console.log(this.visible);
+        }, 5000);
+    }
+}
 </script>
 
 <template>
-    <header id="home"
-        class=" px-4 pt-8 flex flex-col gap-y-8 justify-between w-full bg-mainColor sm:pl-[7.5vw] sm:pb-4 sm:pt-4 sm:rounded-lg sm:grid sm:grid-cols-2 sm:gap-12 sm:pr-4">
+    <header
+        class=" px-4 pt-8 flex flex-col gap-y-8 justify-between w-full bg-mainColor sm:pl-[7.5vw] sm:pb-4 sm:pt-4 sm:grid sm:grid-cols-2 sm:gap-12 sm:pr-4">
         <div class="flex flex-col gap-y-2 w-full h-auto sm:pt-12">
             <h1 class="font-bold text-3xl text-center text-[#2C1A09] sm:text-5xl sm:text-left">
                 {{ $t('header_title') }}
@@ -31,7 +43,7 @@
             </div>
         </div>
         <div class="img relative w-full bg-DarkmainColor p-5">
-            <div class="absolute sm:left-16 top-16 flex w-full first-img">
+            <div class="absolute sm:left-20 top-16 flex w-full first-img" v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -43,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute sm:pr-16 top-[50%] flex justify-end w-full second-img">
+            <div class="absolute sm:pr-20 top-[30%] flex justify-end w-full second-img" v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -55,7 +67,19 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute left-8 sm:left-20 sm:bottom-10 bottom-4 flex w-full third-img">
+            <div class="absolute sm:pr-32 top-[70%] flex justify-end w-full second-img" v-show="visible == true">
+                <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
+                    style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
+                    <div class="w-8 h-8 aspect-square rounded-full">
+                        <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-0">
+                        <span class="text-xs font-bold">Maakye</span>
+                        <span class="text-[10px]">Twi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img" v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -64,6 +88,55 @@
                     <div class="flex flex-col gap-y-0">
                         <span class="text-xs font-bold">Na lingi yo</span>
                         <span class="text-[10px]">Lingala</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute sm:left-20 top-16 flex w-full first-img" v-show="visible == false">
+                <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
+                    style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
+                    <div class="w-8 h-8 aspect-square rounded-full">
+                        <img src="/cameroon.png" class="w-full h-full object-cover rounded-full" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-0">
+                        <span class="text-xs font-bold">Indemin nawot</span>
+                        <span class="text-[10px]">Amharic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute sm:pr-20 top-[30%] flex justify-end w-full second-img" v-show="visible == false">
+                <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
+                    style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
+                    <div class="w-8 h-8 aspect-square rounded-full">
+                        <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-0">
+                        <span class="text-xs font-bold">Ba nun</span>
+                        <span class="text-[10px]">Kpelle</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute sm:pr-32 top-[70%] flex justify-end w-full second-img" v-show="visible == false">
+                <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
+                    style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
+                    <div class="w-8 h-8 aspect-square rounded-full">
+                        <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-0">
+                        <span class="text-xs font-bold">Dumela</span>
+                        <span class="text-[10px]">Setswana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img" v-show="visible == false">
+                <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
+                    style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
+                    <div class="w-8 h-8 aspect-square rounded-full">
+                        <img src="/congo.png" class="w-full h-full object-cover rounded-full" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-0">
+                        <span class="text-xs font-bold">Salamaleikum</span>
+                        <span class="text-[10px]">Wolof</span>
                     </div>
                 </div>
             </div>
@@ -81,22 +154,17 @@ header {
 }
 
 .first-img {
-    animation-delay: 3s;
-    animation: appear 2.5s ease-in-out;
-
+    animation: appear2 1.5s ease-in-out;
 }
 
 .second-img {
-    animation-delay: 3s;
-    animation: appear 3s ease-in-out;
-
+    animation: appear2 2s ease-in-out;
 }
 
 .third-img {
-    animation-delay: 3s;
-    animation: appear 3.5s ease-in-out;
-
+    animation: appear2 2.4s ease-in-out;
 }
+
 
 @keyframes appear {
     0% {
@@ -110,6 +178,18 @@ header {
     }
 }
 
+@keyframes appear2 {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .img {
     height: calc(100% - 35%);
     border-radius: 56px 56px 0 0;
@@ -119,13 +199,15 @@ header {
 @media only screen and (min-width: 640px) {
     header {
         margin: 0 2.5%;
-        height: 70vh;
+        height: 75vh;
+        max-height: 80vh;
         width: 95%;
+        border-radius: 46px;
     }
 
     .img {
         height: 100%;
-        border-radius: 56px;
+        border-radius: 36px;
         overflow: hidden;
     }
 
@@ -133,7 +215,7 @@ header {
         line-height: 4rem;
     }
 
-    .img img {
+    .img>img {
         margin-left: 25%;
     }
 
