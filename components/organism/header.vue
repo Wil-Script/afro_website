@@ -62,7 +62,7 @@ export default {
                         <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Oju ojo dara</span>
+                        <span class="text-xs font-bold">E kaaro</span>
                         <span class="text-[10px]">Yoruba</span>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ export default {
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
-                        <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
+                        <img src="/ghana.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
                         <span class="text-xs font-bold">Maakye</span>
@@ -86,7 +86,7 @@ export default {
                         <img src="/congo.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Na lingi yo</span>
+                        <span class="text-xs font-bold">Mbote</span>
                         <span class="text-[10px]">Lingala</span>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ export default {
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
-                        <img src="/cameroon.png" class="w-full h-full object-cover rounded-full" alt="">
+                        <img src="/ethiopie.jpg" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
                         <span class="text-xs font-bold">Indemin nawot</span>
@@ -108,7 +108,7 @@ export default {
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
-                        <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
+                        <img src="/guinee.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
                         <span class="text-xs font-bold">Ba nun</span>
@@ -120,7 +120,7 @@ export default {
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
-                        <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
+                        <img src="/zimbabwe.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
                         <span class="text-xs font-bold">Dumela</span>
@@ -132,10 +132,10 @@ export default {
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
-                        <img src="/congo.png" class="w-full h-full object-cover rounded-full" alt="">
+                        <img src="/senegal.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Salamaleikum</span>
+                        <span class="text-xs font-bold">Salamalekum</span>
                         <span class="text-[10px]">Wolof</span>
                     </div>
                 </div>
