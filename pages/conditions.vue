@@ -67,7 +67,8 @@
         <div class="mt-12 flex flex-col gap-y-2">
             <span class="font-bold">{{ $t('term_nine_title') }}</span>
             <p class=" text-grisTxt text-justify">
-                {{ $t('term_nine_p') }}
+                {{ $t('term_nine_p1') }} {{ $t('term_nine_p2') }}
+            
             </p>
         </div>
     </section>

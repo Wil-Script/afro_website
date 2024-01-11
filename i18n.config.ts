@@ -94,7 +94,8 @@ export default defineI18nConfig(() => ({
             term_eight_title: `8. Changes to the Terms of Use`,
             term_eight_p: `We reserve the right to modify these Terms of Use at any time. Changes will be posted on this page and will take effect upon posting.`,
             term_nine_title: `9. Contact`,
-            term_nine_p: `For any questions regarding these Terms of Use, please contact us at philippejacques@afrolingo.net or by leaving us a message on telegram/Whatsapp in the contact section available on our official website at www.afrolingo.net. By using our application, you agree to these Terms of Use. Last updated: 01/10/2024.`,
+            term_nine_p1: `If you have any questions about these terms of use, please contact us by email or leave us a message on telegram.`,
+            term_nine_p2: `in the contact section of our official website at www.afrolingo.net . By using our application, you accept these Terms of Use. Last update: 10/01/2024., you agree to these Terms of Use. Last updated: 01/10/2024.`,
 
         },
         fr: {
@@ -193,7 +194,8 @@ export default defineI18nConfig(() => ({
             term_eight_title: `8. Modifications des Conditions d'Utilisation`,
             term_eight_p: `Nous nous réservons le droit de modifier ces Conditions d'Utilisation à tout moment. Les modifications seront publiées sur cette page et prendront effet dès leur publication.`,
             term_nine_title: `9. Contact`,
-            term_nine_p: `Pour toute question concernant cette Conditions d’Utilisation, veuillez nous contacter à philippejacques@afrolingo.net ou en nous laissant un message sur le telegram/Whatsapp dans la rubrique contact disponible dans notre site officiel à l’adresse www.afrolingo.net . En utilisant notre application, vous acceptez ces Conditions d'Utilisation. Dernière mise à jour : 10/01/2024.`,
+            term_nine_p1: `Pour toute question concernant ces conditions d’utilisation, veuillez nous contacter via email ou nous laisser un message sur le telegram`,
+            term_nine_p2: `dans la rubrique contact disponible dans notre site officiel à l’adresse 'www.afrolingo.net'. En utilisant notre application, vous acceptez ces Conditions d'Utilisation. Dernière mise à jour : 10/01/2024.`,
         }
     }
 }))
