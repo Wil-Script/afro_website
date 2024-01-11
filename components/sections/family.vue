@@ -42,7 +42,7 @@
                 <!-- <div class=" w-2/3" @click="$emit('openContact')">
                     <AtomsOutlinedBtn :libelle="$t('waiting_list')" />
                 </div> -->
-                <div class=" w-2/3" @click="$emit('openContact')">
+                <div class=" w-2/3">
                     <a href="#contact"
                         class="flex items-center justify-center w-full py-3 bg-white font-bold rounded-full border border-noir">
                         {{ $t('waiting_list') }}
