@@ -52,7 +52,7 @@
             </p>
         </div>
         <div class="flex justify-center items-center px-2 w-full h-auto">
-            <!-- <NuxtImg src="/lang.png" class="w-[200px] aspect-square object-contain" alt="" /> -->
+            <NuxtImg src="/lang_1.png" class="ml-[20px] w-[160px] aspect-square object-contain" alt="" />
         </div>
     </div>
 </template>

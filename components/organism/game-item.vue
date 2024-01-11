@@ -10,7 +10,7 @@
             </span>
         </div>
         <div class="px-2 w-full h-auto">
-            <NuxtImg src="/choices.png" class="w-[200px] aspect-square object-contain" alt="" />
+            <NuxtImg src="/calebasse.jpg" class="ml-[20px] w-[160px] aspect-square object-contain" alt="" />
         </div>
     </div>
     <div v-else-if="state == 'game-two'"
@@ -33,7 +33,7 @@
             <span class="text-sm font-bold">
                 {{ $t('game_title') }} 3
             </span>
-            <span class="text-xs">                
+            <span class="text-xs">
                 {{ $t('game3_p') }} <br>
             </span>
         </div>
