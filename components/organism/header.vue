@@ -1,23 +1,32 @@
+<script setup>
+
+</script>
+
 <template>
     <header id="home"
         class=" px-4 pt-8 flex flex-col gap-y-8 justify-between w-full bg-mainColor sm:pl-[7.5vw] sm:pb-4 sm:pt-4 sm:rounded-lg sm:grid sm:grid-cols-2 sm:gap-12 sm:pr-4">
         <div class="flex flex-col gap-y-2 w-full h-auto sm:pt-12">
             <h1 class="font-bold text-3xl text-center text-[#2C1A09] sm:text-5xl sm:text-left">
-                Apprendre une langue, découvrir une culture.
+                {{ $t('header_title') }}
             </h1>
             <p class=" text-center text-sm sm:text-xl sm:text-left sm:max-w-screen-sm sm:mt-4">
-                Plongez dans l'univers des langues africaines. Apprenez-en une et laissez-vous transporter par ses sons, ses
-                rythmes et ses histoires.
+                {{ $t('header_p') }}
             </p>
-            <div class="w-full sm:w-[270px] mt-10" @click="$emit('openContact')">
-                <AtomsFullBtn libelle="Rejoindre la liste exclusive" />
+            <!-- <div class="w-full sm:w-[270px] mt-10" @click="$emit('openContact')">
+                <AtomsFullBtn :libelle="$t('waiting_list')" />
+            </div> -->
+            <div class="w-full sm:w-[270px] mt-10">
+                <a href="#contact"
+                    class="flex items-center justify-center w-full py-3 bg-white text-noir font-bold rounded-full">
+                    {{ $t('waiting_list') }}
+                </a>
             </div>
 
             <div class="hidden sm:flex gap-2 mt-10">
-                <NuxtImg src="/avatars.png" class="w-auto h-12" alt="flysoft logo" />
+                <NuxtImg src="/avatars.png" class="w-auto h-12" alt="" />
                 <div class="flex flex-col">
-                    <span class="text-sm">Rejoignez-nous</span>
-                    <span class="font-bold">+1500 personnes</span>
+                    <span class="text-sm">{{ $t('join_us') }}</span>
+                    <span class="font-bold">+1500 {{ $t('persons') }}</span>
                 </div>
             </div>
         </div>
@@ -58,12 +67,10 @@
                     </div>
                 </div>
             </div>
-            <NuxtImg src="/afrolingo-app2.png" class="image w-full sm:w-1/2" alt="flysoft logo" />
+            <NuxtImg src="/afrolingo-app2.png" class="image w-full sm:w-1/2" alt="" />
         </div>
     </header>
 </template>
-<script setup>
-</script>
 <style scoped>
 header {
     height: calc(100vh - 60px);

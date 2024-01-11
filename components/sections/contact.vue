@@ -2,11 +2,10 @@
     <section id="contact" class="mt-[90px] px-5 w-full sm:px-[10vw] grid gap-16 sm:grid-cols-2">
         <div class=" pt-20 flex flex-col w-full h-auto">
             <span class="text-2xl font-bold">
-                Vous avez une question ?
+                {{ $t('question') }}
             </span>
             <p class="text-sm sm:text-base">
-                Contactez-nous en utilisant l'une des méthodes suivantes, et nous vous répondrons dans les plus brefs
-                délais.
+                {{ $t('question_p') }}
             </p>
             <div class="mt-5 w-full h-auto flex flex-col gap-2">
                 <a href="https://t.me/+ogntsBk4q5Q3NDU8"
@@ -20,7 +19,7 @@
                     </div>
                     <div class="flex flex-col h-full justify-center">
                         <span class="font-bold text-sm sm:text-base">Telegram</span>
-                        <p class="text-[10px] text-grisTxt text-sm">Nous allons avoir une conversation instantanée.</p>
+                        <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>
                 <a href="mailto:philippejacques@afrolingo.net"
@@ -36,8 +35,7 @@
                     </div>
                     <div class="flex flex-col h-full justify-center">
                         <span class="font-bold text-sm sm:text-base">Email</span>
-                        <p class="text-[10px] text-grisTxt text-sm">Nous vous répondrons dans les plus brefs
-                            délais.</p>
+                        <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>
             </div>

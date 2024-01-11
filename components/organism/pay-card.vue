@@ -2,11 +2,10 @@
     <div class="px-5 pt-8 pb-5 flex flex-col justify-between gap-3 rounded-lg bg-lightGreen">
         <div class="flex flex-col w-full gap-3">
             <span class="font-bold text-lg">
-                Encouragez-nous
+                {{ $t('support_title') }}
             </span>
             <p class="text-sm sm:text-base">
-                Encouragez-nous à faire beaucoup plus. Un petit geste nous aidera à faire avancer notre mission et à
-                permettre à un plus grand nombre de personnes d'apprendre les langues africaines.
+                {{ $t('support_p') }}
             </p>
         </div>
         <div class="mt-10 w-full">

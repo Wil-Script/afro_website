@@ -3,6 +3,19 @@ export default {
     data() {
         return {
             showMail: false,
+            title: `Afrolingo | Apprendre les langues africaines`,
+            description: `Apprenez à parler une langue africaine en peu de temps. Avec Afrolingo, l'apprentissage de ces langues n'a jamais été aussi accessible et facile !`,
+        }
+    },
+
+    head() {
+        return {
+            title: this.title,
+            meta: [{
+                hid: 'description',
+                name: 'description',
+                content: this.description
+            }]
         }
     }
 }

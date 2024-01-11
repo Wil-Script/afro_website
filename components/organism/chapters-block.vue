@@ -2,11 +2,10 @@
     <div class=" w-full h-auto py-8 bg-lightGreen rounded-lg overflow-hidden">
         <div class="relative px-4 flex flex-col w-full h-auto">
             <h2 class="text-2xl font-bold">
-                Une méthode d'étude simple pour un apprentissage facile.
+                {{ $t('chapter_title') }}
             </h2>
             <p class="mt-1">
-                Une approche claire et ludique pour une assimilation optimale. Partez à la découverte des langues africaines
-                avec une méthode d'apprentissage innovante.
+                {{ $t('chapter_p') }}
             </p>
         </div>
         <div class="mt-8 slider">

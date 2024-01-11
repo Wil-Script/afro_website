@@ -1,10 +1,10 @@
 <template>
     <div class="w-full h-auto py-8 bg-lightPurple rounded-lg overflow-hidden">
         <h2 class="px-4 text-2xl font-bold">
-            Apprendre en douceur et pas à pas.
+            {{ $t('lesson_block_title') }}
         </h2>
         <p class="mt-1 px-4">
-            A chacun son rythme, apprenez de nouvelles notions progressivement, apprendre vite et bien c'est possible.
+            {{ $t('lesson_block_p') }}
         </p>
         <div class="mt-8 slider">
             <div class=" flex overflow-auto mr-0">

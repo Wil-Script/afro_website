@@ -2,11 +2,10 @@
     <div class="w-full h-auto py-8 bg-lightOrange rounded-lg overflow-hidden">
         <div class="relative px-4 flex flex-col w-full h-auto">
             <h2 class="text-2xl font-bold">
-                Tout ce dont vous avez besoin pour apprécier votre évolution.
+                {{ $t('evolution_block_title') }}
             </h2>
             <p class="mt-1">
-                Apprendre c'est bien, apprécier ses progrès c'est mieux. Toute une série de points pour vous encourager et
-                vous pousser à évoluer rapidement et à prendre plaisir à apprendre.
+                {{ $t('evolution_block_p') }}
             </p>
         </div>
         <div class="mt-8 slider">

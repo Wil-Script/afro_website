@@ -2,10 +2,10 @@
     <div class="w-full h-auto py-8 bg-lightGreen rounded-lg overflow-hidden">
         <div class="relative px-4 flex flex-col w-full h-auto">
             <h2 class="text-2xl font-bold">
-                Des petits jeux pour apprendre encore plus vite.
+                {{ $t('game_block_title') }}
             </h2>
             <p class="mt-1">
-                Jouez et apprenez avec des jeux qui stimulent votre mémoire et vous permettent de comprendre plus facilement. Découvrez les langues africaines comme nulle part ailleurs.
+                {{ $t('game_block_p') }}
             </p>
         </div>
         <div class="mt-8 slider">

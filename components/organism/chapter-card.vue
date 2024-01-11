@@ -22,10 +22,10 @@
         class="mr-2 p-4 inline-flex flex-col justify-between h-[250px] w-[200px] bg-white rounded-lg">
         <div class="flex justify-between w-full h-auto">
             <span class="px-2 flex items-center justify-center h-6 w-auto rounded-full bg-lightGreen text-[10px]">
-                Chapitre 4
+                {{ $t('chapter') }} 4
             </span>
             <span class="px-2 flex items-center justify-center h-6 w-auto rounded-full border border-[#eee] text-[10px]">
-                12 leçons
+                12 {{ $t('lesson') }}
             </span>
         </div>
 
@@ -40,17 +40,17 @@
             </div>
         </div>
         <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-mainGreen">
-            Commencer
+            {{ $t('start') }}
         </div>
     </div>
     <div v-else-if="state == 'orange'"
         class="mr-2 p-4 inline-flex flex-col justify-between h-[250px] w-[200px] bg-white rounded-lg">
         <div class="flex justify-between w-full h-auto">
             <span class="px-2 flex items-center justify-center h-6 w-auto rounded-full bg-lightOrange text-[10px]">
-                Chapitre 8
+                {{ $t('chapter') }} 8
             </span>
             <span class="px-2 flex items-center justify-center h-6 w-auto rounded-full border border-[#eee] text-[10px]">
-                8 leçons
+                8 {{ $t('lesson') }}
             </span>
         </div>
 
@@ -65,17 +65,17 @@
             </div>
         </div>
         <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-mainColor">
-            Commencer
+            {{ $t('start') }}
         </div>
     </div>
     <div v-else-if="state == 'purple'"
         class="mr-2 p-4 inline-flex flex-col justify-between h-[250px] w-[200px] bg-white rounded-lg">
         <div class="flex justify-between w-full h-auto">
             <span class="px-2 flex items-center justify-center h-6 w-auto rounded-full bg-lightPurple text-[10px]">
-                Chapitre 8
+                {{ $t('chapter') }} 8
             </span>
             <span class="px-2 flex items-center justify-center h-6 w-auto rounded-full border border-[#eee] text-[10px]">
-                16 leçons
+                16 {{ $t('lesson') }}
             </span>
         </div>
 
@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-mainPurple">
-            Commencer
+            {{ $t('start') }}
         </div>
     </div>
 </template>

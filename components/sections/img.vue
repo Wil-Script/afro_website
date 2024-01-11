@@ -41,7 +41,7 @@
                 +15
             </span>
             <p>
-                Africans languages available just for you.
+                {{ $t('total') }}
             </p>
             <div class="mt-8 flex flex-wrap gap-1 w-full h-auto">
                 <div class="inline-block px-5 py-2 w-auto h-auto rounded-lg border border-white bg-white">Bangou</div>

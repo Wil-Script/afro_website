@@ -15,16 +15,26 @@
                 </div>
             </div>
             <span class="font-bold text-xl">
-                Entrez votre adresse email
+                {{ $t('get_email_title') }}
             </span>
             <p>
-                Faites partir des toutes premières personnes à avoir accès à l'application Afrolingo en toute exclusivité.
+                {{ $t('get_email_p') }}
             </p>
 
             <input type="text" placeholder="example@gmail.com"
                 class=" h-16 px-3 mt-9 rounded-full border border-[#e5e5e5] outline-none" v-model="email">
-            <div class="w-full mt-12" @click="sendEmail()">
-                <AtomsFullBtn libelle="Envoyer" :state="true" />
+            <div class="w-full mt-12" @click="sendEmail()" v-if="loader == false">
+                <AtomsFullBtn :libelle="$t('send')" :state="true" />
+            </div>
+            <div class="w-full mt-12" v-else v-show="emailSended == false">
+                <button class="w-full cursor-not-allowed py-3 bg-noir text-white font-bold rounded-full">
+                    Loading...
+                </button>
+            </div>
+            <div class="w-full mt-12" v-show="emailSended == true">
+                <button class="w-full bg-green-600 cursor-not-allowed py-3 text-white font-bold rounded-full">
+                    Email envoyé avec succès !
+                </button>
             </div>
         </div>
     </div>
@@ -33,20 +43,33 @@
 export default {
     data() {
         return {
-            email: ""
+            email: "",
+            loader: false,
+            emailSended: false,
         }
     },
     methods: {
-        sendEmail() {
+        async sendEmail() {
+            this.loader = true
             if (!this.validateEmail(this.email)) {
                 return alert("Entrez une adresse mail valide !")
+            } else {
+                await this.addEmail()
             }
-            this.emailSend = true
+
+            this.emailSended = true
         },
         validateEmail(mail) {
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) return (true)
-
-        }
+        },
+        async addEmail() {
+            let lang = {
+                email: this.email,
+            }
+            await addDoc(lang, `email`)
+            this.emailSended = true
+            this.loader = false
+        },
     }
 }
 </script>

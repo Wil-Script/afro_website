@@ -5,15 +5,11 @@
             <div class="hidden sm:flex sm:flex-col sm:w-full sm:h-full bg-white rounded-lg p-5">
                 <div class="flex w-full h-auto">
                     <div class=" bg-mainGreen text-lg font-bold text-white font-bol px-5 py-2 rounded-full">
-                        Imaginez
+                        {{ $t('imagine') }}
                     </div>
                 </div>
                 <p class="mt-4">
-                    Déverrouiller le <b class=" text-mainPurple">Swahili</b> et vous promener dans les marchés
-                    animés de <b class=" text-mainGreen">Zanzibar</b>, ou bien
-                    maîtriser le <b class=" text-mainColor">Wolof</b> et partager un thé parfumé avec une <b
-                        class=" text-mainPurple">famille sénégalaise</b>. Chaque langue est une passerelle vers une culture
-                    riche et vibrante, prête à être explorée.
+                    {{ $t('unlock') }}
                 </p>
             </div>
             <div class="w-full h-auto sm:h-full">
@@ -23,28 +19,28 @@
         <div class="px-5 py-8 w-full h-auto bg-white rounded-lg sm:col-start-4 sm:col-end-9 sm:pb-32 sm:py-10 sm:px-10">
             <div class="flex flex-col w-full h-auto gap-1">
                 <span class="font-bold sm:text-xl">
-                    Adapté à tous.
+                    {{ $t('forAll') }}
                 </span>
                 <p class=" text-grisTxt text-sm sm:text-base">
-                    Afrolingo est une application qui s'adapte à tous les types de profils, des plus jeunes aux plus âgés.
+                    {{ $t('forAll_p') }}
                 </p>
             </div>
             <div class="mt-5 p-4 rounded-[18px] flex flex-col w-full gap-1 border border-[#e5e5e5]">
-                <span class="font-bold sm:text-lg">Enfants et adolescents</span>
+                <span class="font-bold sm:text-lg">{{ $t('child_title') }}</span>
                 <p class="text-sm text-grisTxt sm:text-base">
-                    Application conviviale qui simplifie l'apprentissage, même pour les plus jeunes.
+                    {{ $t('child_p') }}
                 </p>
             </div>
             <div class="mt-2 p-4 rounded-[18px] flex flex-col w-full gap-1 border border-[#e5e5e5]">
-                <span class="font-bold sm:text-lg">Adultes</span>
+                <span class="font-bold sm:text-lg">{{ $t('adult_title') }}</span>
                 <p class="text-sm text-grisTxt sm:text-base">
-                    Du contenu de qualité et consistent pour vous permettre d'apprendre même les notions les plus avancées.
+                    {{ $t('adult_p') }}
                 </p>
             </div>
 
             <div class="mt-8 flex gap-1 sm:mt-14">
                 <div class=" w-2/3" @click="$emit('openContact')">
-                    <AtomsOutlinedBtn libelle="Rejoindre la file d'attente" />
+                    <AtomsOutlinedBtn :libelle="$t('waiting_list')" />
                 </div>
                 <div class="flex gap-1 w-1/3">
                     <a href="https://www.instagram.com/afrolingo.officiel"

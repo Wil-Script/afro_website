@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/i18n": "^8.0.0",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.9.0",
     "nuxt-paypal": "^0.0.1-beta",
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.1.0",
-    "@studio-freight/lenis": "^1.0.33"
+    "@studio-freight/lenis": "^1.0.33",
+    "firebase": "^10.7.1"
   }
 }

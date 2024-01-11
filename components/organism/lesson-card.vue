@@ -12,8 +12,9 @@
             <NuxtImg src="greet.png" class=" w-8 aspect-square" alt="" />
         </div>
         <div class="flex flex-col gap-y-1 w-full h-auto">
-            <div class="h-3 text-xs font-bold">Salutations</div>
-            <div class="text-xs text-grisTxt">Apprendre à saluer à tout moment</div>
+
+            <div class="h-3 text-xs font-bold">{{ $t('greet') }}</div>
+            <div class="text-xs text-grisTxt">{{ $t('greet_p') }}</div>
         </div>
     </div>
     <div v-if="state == 'green'" class="inline-flex items-center gap-x-2 h-20 w-[250px] bg-white rounded-[18px] mr-2 p-2">
@@ -21,8 +22,8 @@
             <NuxtImg src="move.png" class=" w-8 aspect-square" alt="" />
         </div>
         <div class="flex flex-col gap-y-1 w-full h-auto">
-            <div class="h-3 text-xs font-bold">Déplacement</div>
-            <div class="text-xs text-grisTxt">Découvrir les expressions pour se déplacer.</div>
+            <div class="h-3 text-xs font-bold">{{ $t('move') }}</div>
+            <div class="text-xs text-grisTxt">{{ $t('move_p') }}</div>
         </div>
     </div>
     <div v-if="state == 'orange'" class="inline-flex items-center gap-x-2 h-20 w-[250px] bg-white rounded-[18px] mr-2 p-2">
@@ -30,8 +31,8 @@
             <NuxtImg src="count.png" class=" w-8 aspect-square" alt="" />
         </div>
         <div class="flex flex-col gap-y-1 w-full h-auto">
-            <div class="h-3 text-xs font-bold">Compter</div>
-            <div class="text-xs text-grisTxt">Découvrir les chiffres et les nombres.</div>
+            <div class="h-3 text-xs font-bold">{{ $t('count') }}</div>
+            <div class="text-xs text-grisTxt">{{ $t('count_p') }}</div>
         </div>
     </div>
 </template>

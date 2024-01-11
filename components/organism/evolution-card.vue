@@ -3,11 +3,11 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Coins system
+                {{ $t('evol1_title') }}
             </span>
-            <span class="text-xs">
-                Lorem ipsum dolor sit amet
-            </span>
+            <p class="text-xs">
+                {{ $t('evol1_p') }}
+            </p>
         </div>
         <div class="flex justify-center items-center px-2 w-full h-auto">
             <NuxtImg src="/reward.png" class="w-[150px] aspect-square object-contain" alt="" />
@@ -17,11 +17,11 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Favourite
+                {{ $t('evol2_title') }}
             </span>
-            <span class="text-xs">
-                Keep your favorite words in sight.
-            </span>
+            <p class="text-xs">
+                {{ $t('evol2_p') }}
+            </p>
         </div>
         <div class="flex justify-center items-center px-2 w-full h-auto">
             <NuxtImg src="/heart.png" class="w-[150px] aspect-square object-contain" alt="" />
@@ -31,11 +31,11 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Word by theme
+                {{ $t('evol3_title') }}
             </span>
-            <span class="text-xs">
-                Learn according to specific fields.
-            </span>
+            <p class="text-xs">
+                {{ $t('evol3_p') }}
+            </p>
         </div>
         <div class="flex justify-center items-center px-2 w-full h-auto">
             <NuxtImg src="/theme.png" class="w-[150px] aspect-square object-contain" alt="" />
@@ -45,11 +45,11 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Many languages
+                {{ $t('evol4_title') }}
             </span>
-            <span class="text-xs">
-                Learn many languages in one time.
-            </span>
+            <p class="text-xs">
+                {{ $t('evol4_p') }}
+            </p>
         </div>
         <div class="flex justify-center items-center px-2 w-full h-auto">
             <!-- <NuxtImg src="/lang.png" class="w-[200px] aspect-square object-contain" alt="" /> -->

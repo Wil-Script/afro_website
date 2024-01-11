@@ -3,10 +3,10 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Jeu 1
+                {{ $t('game_title') }} 1
             </span>
             <span class="text-xs">
-                Illustrations to help you remember.
+                {{ $t('game1_p') }}
             </span>
         </div>
         <div class="px-2 w-full h-auto">
@@ -17,10 +17,10 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Jeu 2
+                {{ $t('game_title') }} 2
             </span>
             <span class="text-xs">
-                Play quizzes and discover new words.
+                {{ $t('game2_p') }}
             </span>
         </div>
         <div class="px-2 w-full h-auto">
@@ -31,10 +31,10 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Jeu 3
+                {{ $t('game_title') }} 3
             </span>
-            <span class="text-xs">
-                Single-choice questions. <br>
+            <span class="text-xs">                
+                {{ $t('game3_p') }} <br>
             </span>
         </div>
         <div class="px-2 w-full h-auto">
@@ -45,10 +45,10 @@
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
             <span class="text-sm font-bold">
-                Jeu 4
+                {{ $t('game_title') }} 4
             </span>
             <span class="text-xs">
-                Complete sentences. <br>
+                {{ $t('game4_p') }} <br>
             </span>
         </div>
         <div class="px-2 w-full h-auto">
