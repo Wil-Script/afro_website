@@ -9,7 +9,9 @@
             'bg-littleDarkOrange': color == 'orange',
             'bg-littleDarkPurple': color == 'purple',
         }">
-
+            <NuxtImg v-if="color == 'orange'" src="/drum.png" class="h-5" alt="flysoft logo" />
+            <NuxtImg v-else-if="color == 'green'" src="/gorilla.png" class="h-5" alt="flysoft logo" />
+            <NuxtImg v-else src="/sun.png" class="h-5" alt="flysoft logo" />
         </div>
         <span>
             {{ lang }}

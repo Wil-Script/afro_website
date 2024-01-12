@@ -3,7 +3,7 @@
         class="mt-[90px] py-10 px-5 w-full h-auto border-t border-[#e5e5e5] sm:px-[10vw] sm:flex sm:justify-between sm:items-center sm:py-8">
         <div class="flex w-auto h-auto items-center gap-4">
             <div class=" w-2/3">
-                Suivez-nous sur :
+                {{ $t('follow_us') }} :
             </div>
             <div class="flex w-auto h-auto gap-2">
                 <a href="https://www.instagram.com/afrolingo.officiel"

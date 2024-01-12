@@ -115,7 +115,7 @@ export default defineI18nConfig(() => ({
             privacy_seven_title: `7. Contact`,
             privacy_seven_p1: `If you have any questions about this privacy policy, please contact us via email or leave us a message on telegram.`,
             privacy_seven_p2: `in the contact section of our official website at 'www.afrolingo.net'. By using our application, you accept these Terms of Use. Last update : 10/01/2024.`,
-
+            follow_us:`Follow us`,
 
         },
         fr: {
@@ -235,7 +235,7 @@ export default defineI18nConfig(() => ({
             privacy_seven_title: `7. Contact`,
             privacy_seven_p1: `Pour toute question concernant cette politique de confidentialité, veuillez nous contacter via email ou nous laisser un message sur le telegram`,
             privacy_seven_p2: `dans la rubrique contact disponible dans notre site officiel à l’adresse 'www.afrolingo.net'. En utilisant notre application, vous acceptez ces Conditions d'Utilisation. Dernière mise à jour : 10/01/2024.`,
-
+            follow_us:`Suivez nous`,
         }
     }
 }))

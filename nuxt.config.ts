@@ -34,6 +34,6 @@ export default defineNuxtConfig({
 
   },
   paypal: {
-    clientId: "AVHXmkoIpqgDDZ8W_LIrDBfi55oXxbagv2-hsaWocz8ERqzS_iO3S_FB7AyYlJyzMJYlDSilp2KmPwS4",
+    clientId: "ASpQpk9ETHCt88eNOQMc2taK0yeXDXjLjQuy-VnXh7muFkSlc0L1V_xm8IV0uDs10FXHriUlk9F1gwI0",
   },
 })
