@@ -22,7 +22,7 @@
                         <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>
-                <a href="mailto:philippejacques@afrolingo.net"
+                <a href="mailto:philippejacques@afrolingo.org"
                     class="p-1 h-16 w-full flex gap-3 border border-[#e5e5e5] rounded-full">
                     <div class="h-full aspect-square rounded-full flex justify-center items-center bg-[#f5f5f5]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
