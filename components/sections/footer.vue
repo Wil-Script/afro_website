@@ -34,7 +34,7 @@
         </div>
         <div class="mt-10 flex flex-col items-center w-full h-auto gap-4 sm:flex-row sm:w-auto sm:mt-0 sm:gap-6">
             <Nuxt-link to="conditions" class="text-xs sm:text-sm">{{ $t('condition') }}</Nuxt-link>
-            <Nuxt-link to="privacy" class="text-xs sm:text-sm">{{ $t('privacy') }}</Nuxt-link>
+            <Nuxt-link to="privacy" class="text-xs sm:text-sm">{{ $t('privacy_security') }}</Nuxt-link>
             <span class="text-xs sm:text-sm">@Afrolingo 2024</span>
         </div>
     </footer>
