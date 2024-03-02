@@ -1,4 +1,4 @@
-import { doc, setDoc, addDoc, collection } from "@firebase/firestore";
+import {addDoc, collection } from "@firebase/firestore";
 
 export default async function (docObj, path) {
   const { $firestore } = useNuxtApp();

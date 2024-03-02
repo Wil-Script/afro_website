@@ -5,6 +5,18 @@ export default {
             visible: false,
         }
     },
+    methods: {
+        async download() {
+            this.loader = true
+            let new_date = new Date()
+            const audio_link = ref('')
+            // await addMedia(this.file_audio, 'alphabet_audio').then((response) => audio_link.value = response)
+            let download = {
+                downLoadAt: new_date.getTime(),
+            }
+            await addDoc(download, `download`)
+        }
+    },
     mounted() {
         setInterval(() => {
             this.visible = !this.visible;
@@ -26,10 +38,10 @@ export default {
             <!-- <div class="w-full sm:w-[270px] mt-10" @click="$emit('openContact')">
                 <AtomsFullBtn :libelle="$t('waiting_list')" />
             </div> -->
-            <div class="w-full sm:w-[270px] mt-10">
-                <a href="#contact"
+            <div class="w-full sm:w-[270px] mt-10" @click="download()">
+                <a href="/afrolingo-beta.apk" download="" target="_blank"
                     class="flex items-center justify-center w-full py-3 bg-white text-noir font-bold rounded-full">
-                    {{ $t('waiting_list') }}
+                    {{ $t('download_beta') }}
                 </a>
             </div>
 
@@ -45,8 +57,7 @@ export default {
                     {{ $t('follow_us') }} :
                 </div>
                 <div class="flex w-auto h-auto gap-2">
-                    <a href="https://www.instagram.com/afrolingo.officiel"
-                        class="flex items-center justify-center">
+                    <a href="https://www.instagram.com/afrolingo.officiel" class="flex items-center justify-center">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
@@ -58,8 +69,7 @@ export default {
                                 stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <a href="https://www.tiktok.com/@afrolingo"
-                        class="flex items-center justify-center">
+                    <a href="https://www.tiktok.com/@afrolingo" class="flex items-center justify-center">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
@@ -109,7 +119,8 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img" v-show="visible == true">
+            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img"
+                v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -158,7 +169,8 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img" v-show="visible == false">
+            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img"
+                v-show="visible == false">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -174,6 +186,7 @@ export default {
         </div>
     </header>
 </template>
+
 <style scoped>
 header {
     height: calc(100vh - 60px);

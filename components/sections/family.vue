@@ -1,3 +1,25 @@
+<script>
+export default {
+    data() {
+        return {
+            visible: false,
+        }
+    },
+    methods: {
+        async download() {
+            this.loader = true
+            let new_date = new Date()
+            const audio_link = ref('')
+            // await addMedia(this.file_audio, 'alphabet_audio').then((response) => audio_link.value = response)
+            let download = {
+                downLoadAt: new_date.getTime(),
+            }
+            await addDoc(download, `download`)
+        }
+    },
+}
+</script>
+
 <template>
     <section
         class="mt-[90px] px-5 py-14 grid gap-5 w-full h-auto bg-[#F9F8F8] sm:px-[10vw] sm:grid-cols-10 sm:py-24 sm:my-40">
@@ -42,10 +64,10 @@
                 <!-- <div class=" w-2/3" @click="$emit('openContact')">
                     <AtomsOutlinedBtn :libelle="$t('waiting_list')" />
                 </div> -->
-                <div class="w-full">
-                    <a href="#contact"
+                <div class="w-full" @click="download()">
+                    <a href="/afrolingo-beta.apk" download="" target="_blank"
                         class="flex items-center justify-center w-full py-3 bg-white font-bold rounded-full border border-noir">
-                        {{ $t('waiting_list') }}
+                        {{ $t('download_beta') }}
                     </a>
                 </div>
                 <!-- <div class="flex gap-1 w-1/3">
