@@ -11,9 +11,7 @@ export default defineNuxtConfig({
         },
       ],
       title: "Afrolingo | Apprendre les langues africaines",
-      meta: [
-
-      ]
+      meta: [],
     },
   },
   css: ["~/assets/styles/index.css"],
@@ -23,17 +21,19 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@nuxt/image',
-    'nuxt-paypal',
-    '@nuxtjs/i18n',
-  ],
+  modules: ["@nuxt/image", "nuxt-paypal", "@nuxtjs/i18n"],
   i18n: {
-    locales: ['fr', 'en'],  // used in URL path prefix
-    defaultLocale: 'fr',    // default locale of your project for Nuxt pages and routings
-
+    locales: ["fr", "en"], // used in URL path prefix
+    defaultLocale: "fr", // default locale of your project for Nuxt pages and routings
+    strategy: "prefix_except_default",
+    detectBrowserLanguage: {
+      useCookie: false,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root", // recommended
+    },
   },
   paypal: {
-    clientId: "ASpQpk9ETHCt88eNOQMc2taK0yeXDXjLjQuy-VnXh7muFkSlc0L1V_xm8IV0uDs10FXHriUlk9F1gwI0",
+    clientId:
+      "ASpQpk9ETHCt88eNOQMc2taK0yeXDXjLjQuy-VnXh7muFkSlc0L1V_xm8IV0uDs10FXHriUlk9F1gwI0",
   },
-})
+});
