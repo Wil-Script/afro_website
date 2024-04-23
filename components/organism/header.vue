@@ -27,10 +27,9 @@ export default {
 
 <template>
     <header
-        class=" px-4 pt-8 flex flex-col gap-y-8 justify-between w-full bg-mainColor md:pl-[7.5vw] md:pb-4 md:pt-4 sm:grid md:grid-cols-2 md:gap-16 md:pr-4">
+        class=" px-4 pt-8 grid grid-rows-2 gap-y-8 justify-between w-full bg-mainColor md:pl-[7.5vw] md:pb-4 md:pt-4 md:grid-cols-2 md:grid-rows-1 md:gap-16 md:pr-4">
         <div class="flex flex-col md:justify-center gap-y-2 w-full h-auto md:pt-10">
-            <h1 class="font-baloo text-3xl text-[#2C1A09] md:text-4xl text-left"
-                style="line-height: 44px;">
+            <h1 class="font-baloo text-3xl text-[#2C1A09] md:text-4xl text-left" style="line-height: 44px;">
                 {{ $t('header_title') }}
             </h1>
             <p class=" text-left md:max-w-screen-sm md:mt-4">
@@ -97,8 +96,8 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="img relative w-full bg-DarkmainColor p-5">
-            <div class="absolute sm:left-20 top-16 flex w-full first-img" v-show="visible == true">
+        <div class=" relative w-full bg-DarkmainColor img">
+            <div class="absolute z-20 sm:left-20 top-16 flex w-full first-img" v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -110,7 +109,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute sm:pr-20 top-[30%] flex justify-end w-full second-img" v-show="visible == true">
+            <div class="absolute z-20 sm:pr-20 top-[30%] flex justify-end w-full second-img" v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -122,7 +121,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute sm:pr-32 top-[70%] flex justify-end w-full second-img" v-show="visible == true">
+            <div class="absolute z-20 sm:pr-32 top-[70%] flex justify-end w-full second-img" v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -134,7 +133,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img"
+            <div class="absolute z-20 left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img"
                 v-show="visible == true">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
@@ -148,7 +147,7 @@ export default {
                 </div>
             </div>
 
-            <div class="absolute sm:left-20 top-16 flex w-full first-img" v-show="visible == false">
+            <div class="absolute z-20 sm:left-20 top-16 flex w-full first-img" v-show="visible == false">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -160,7 +159,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute sm:pr-20 top-[30%] flex justify-end w-full second-img" v-show="visible == false">
+            <div class="absolute z-20 sm:pr-20 top-[30%] flex justify-end w-full second-img" v-show="visible == false">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -172,7 +171,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute sm:pr-32 top-[70%] flex justify-end w-full second-img" v-show="visible == false">
+            <div class="absolute z-20 sm:pr-32 top-[70%] flex justify-end w-full second-img" v-show="visible == false">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
                     <div class="w-8 h-8 aspect-square rounded-full">
@@ -184,7 +183,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="absolute left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img"
+            <div class="absolute z-20 left-8 sm:left-32 sm:bottom-10 bottom-4 flex w-full third-img"
                 v-show="visible == false">
                 <div class="flex justify-end items-center gap-2 px-2 pr-3 py-2 bg-white rounded-full"
                     style="box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.25);">
@@ -197,19 +196,28 @@ export default {
                     </div>
                 </div>
             </div>
-            <NuxtImg src="/home.png" class="image" alt="" />
+            <div class=" relative w-full h-full overflow-hidden">
+                <NuxtImg src="/home.png" class="absolute image" alt="" />
+            </div>
         </div>
     </header>
 </template>
 
 <style scoped>
 header {
-    height: calc(100vh - 60px);
+    height: auto;
+    min-height: calc(100vh - 60px);
 }
-
+.img {
+    height: 100%;
+    border-radius: 56px 56px 0 0;
+    overflow: hidden;
+}
 .image {
+    top: 12px;
+    left: 12px;
     animation: appear 1.2s ease-in-out;
-    width: 100%;
+    width: calc(100% - 24px);
 }
 
 .first-img {
@@ -249,27 +257,24 @@ header {
     }
 }
 
-.img {
-    height: calc(100% - 35%);
-    border-radius: 56px 56px 0 0;
-    overflow: hidden;
-}
+
 
 @media only screen and (min-width: 640px) {
     header {
         margin: 0 2.5%;
-        height: 75vh;
-        max-height: 80vh;
+        height: auto;
+        min-height: 75vh;
+        /* max-height: 600px; */
         width: 95%;
         border-radius: 46px;
     }
 
     .img {
+        display: block;
         height: 100%;
         border-radius: 36px;
         overflow: hidden;
     }
-
     h1 {
         line-height: 4rem;
     }
