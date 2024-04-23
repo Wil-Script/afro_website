@@ -1,5 +1,5 @@
 <template>
-    <button class="w-full py-3 bg-white font-bold rounded-full" :class="{'activ':state}">
+    <button class="w-full py-3 bg-white font-baloo rounded-full" :class="{'activ':state}">
         {{ libelle }}
     </button>
 </template>

@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="flex flex-col p-4 py-10 w-full h-auto rounded-lg bg-lightOrange">
-            <span class="font-bold text-3xl">
+            <span class="font-baloo text-3xl">
                 +15
             </span>
             <p>

@@ -13,7 +13,7 @@
         </div>
         <div class="flex flex-col gap-y-1 w-full h-auto">
 
-            <div class="h-3 text-xs font-bold">{{ $t('greet') }}</div>
+            <div class="h-3 text-xs font-baloo">{{ $t('greet') }}</div>
             <div class="text-xs text-grisTxt">{{ $t('greet_p') }}</div>
         </div>
     </div>
@@ -22,7 +22,7 @@
             <NuxtImg src="move.png" class=" w-8 aspect-square" alt="" />
         </div>
         <div class="flex flex-col gap-y-1 w-full h-auto">
-            <div class="h-3 text-xs font-bold">{{ $t('move') }}</div>
+            <div class="h-3 text-xs font-baloo">{{ $t('move') }}</div>
             <div class="text-xs text-grisTxt">{{ $t('move_p') }}</div>
         </div>
     </div>
@@ -31,7 +31,7 @@
             <NuxtImg src="count.png" class=" w-8 aspect-square" alt="" />
         </div>
         <div class="flex flex-col gap-y-1 w-full h-auto">
-            <div class="h-3 text-xs font-bold">{{ $t('count') }}</div>
+            <div class="h-3 text-xs font-baloo">{{ $t('count') }}</div>
             <div class="text-xs text-grisTxt">{{ $t('count_p') }}</div>
         </div>
     </div>

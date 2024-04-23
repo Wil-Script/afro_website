@@ -32,7 +32,7 @@
             <div class=" flex items-center gap-0">
                 <div class="w-[180px]" @click="$emit('openContact')">
                     <Nuxt-link to="/#contact"
-                        class="flex items-center justify-center w-full py-3 bg-noir text-white font-bold rounded-full">
+                        class="flex items-center justify-center w-full py-3 bg-noir text-white font-baloo rounded-full">
                         {{ $t('contact_us') }}
                     </Nuxt-link>
                 </div>

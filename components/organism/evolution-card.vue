@@ -2,7 +2,7 @@
     <div v-if="state == 'coin'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('evol1_title') }}
             </span>
             <p class="text-xs">
@@ -16,7 +16,7 @@
     <div v-else-if="state == 'favourite'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('evol2_title') }}
             </span>
             <p class="text-xs">
@@ -30,7 +30,7 @@
     <div v-else-if="state == 'theme'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('evol3_title') }}
             </span>
             <p class="text-xs">
@@ -44,7 +44,7 @@
     <div v-else-if="state == 'lang'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('evol4_title') }}
             </span>
             <p class="text-xs">

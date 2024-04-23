@@ -29,7 +29,7 @@ export default {
     <header
         class=" px-4 pt-8 flex flex-col gap-y-8 justify-between w-full bg-mainColor md:pl-[7.5vw] md:pb-4 md:pt-4 sm:grid md:grid-cols-2 md:gap-16 md:pr-4">
         <div class="flex flex-col md:justify-center gap-y-2 w-full h-auto md:pt-10">
-            <h1 class="font-bold text-3xl text-center text-[#2C1A09] md:text-4xl md:text-left"
+            <h1 class="font-baloo text-3xl text-center text-[#2C1A09] md:text-4xl md:text-left font-baloo"
                 style="line-height: 44px;">
                 {{ $t('header_title') }}
             </h1>
@@ -62,7 +62,7 @@ export default {
                         </svg>
                         {{ $t('download_ios') }}
                     </a>
-                    <span class=" text-xs"> *Bientot disponible</span>
+                    <span class=" text-xs"> *{{ $t('soon') }}</span>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@ export default {
                         <img src="/cameroon.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Wouh di youah</span>
+                        <span class="text-xs font-baloo">Wouh di youah</span>
                         <span class="text-[10px]">Bangou</span>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ export default {
                         <img src="/nigeria.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">E kaaro</span>
+                        <span class="text-xs font-baloo">E kaaro</span>
                         <span class="text-[10px]">Yoruba</span>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ export default {
                         <img src="/ghana.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Maakye</span>
+                        <span class="text-xs font-baloo">Maakye</span>
                         <span class="text-[10px]">Twi</span>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ export default {
                         <img src="/congo.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Mbote</span>
+                        <span class="text-xs font-baloo">Mbote</span>
                         <span class="text-[10px]">Lingala</span>
                     </div>
                 </div>
@@ -155,7 +155,7 @@ export default {
                         <img src="/ethiopie.jpg" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Indemin nawot</span>
+                        <span class="text-xs font-baloo">Indemin nawot</span>
                         <span class="text-[10px]">Amharic</span>
                     </div>
                 </div>
@@ -167,7 +167,7 @@ export default {
                         <img src="/guinee.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Ba nun</span>
+                        <span class="text-xs font-baloo">Ba nun</span>
                         <span class="text-[10px]">Kpelle</span>
                     </div>
                 </div>
@@ -179,7 +179,7 @@ export default {
                         <img src="/zimbabwe.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Dumela</span>
+                        <span class="text-xs font-baloo">Dumela</span>
                         <span class="text-[10px]">Setswana</span>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ export default {
                         <img src="/senegal.png" class="w-full h-full object-cover rounded-full" alt="">
                     </div>
                     <div class="flex flex-col gap-y-0">
-                        <span class="text-xs font-bold">Salamalekum</span>
+                        <span class="text-xs font-baloo">Salamalekum</span>
                         <span class="text-[10px]">Wolof</span>
                     </div>
                 </div>

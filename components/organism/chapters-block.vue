@@ -1,7 +1,7 @@
 <template>
     <div class=" w-full h-auto py-8 bg-lightGreen rounded-lg overflow-hidden">
         <div class="relative px-4 flex flex-col w-full h-auto">
-            <h2 class="text-2xl font-bold">
+            <h2 class="text-2xl font-baloo">
                 {{ $t('chapter_title') }}
             </h2>
             <p class="mt-1">

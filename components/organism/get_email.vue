@@ -14,7 +14,7 @@
                     </svg>
                 </div>
             </div>
-            <span class="font-bold text-xl">
+            <span class="font-baloo text-xl">
                 {{ $t('get_email_title') }}
             </span>
             <p>
@@ -27,12 +27,12 @@
                 <AtomsFullBtn :libelle="$t('send')" :state="true" />
             </div>
             <div class="w-full mt-12" v-else v-show="emailSended == false">
-                <button class="w-full cursor-not-allowed py-3 bg-noir text-white font-bold rounded-full">
+                <button class="w-full cursor-not-allowed py-3 bg-noir text-white font-baloo rounded-full">
                     Loading...
                 </button>
             </div>
             <div class="w-full mt-12" v-show="emailSended == true">
-                <button class="w-full bg-green-600 cursor-not-allowed py-3 text-white font-bold rounded-full">
+                <button class="w-full bg-green-600 cursor-not-allowed py-3 text-white font-baloo rounded-full">
                     Email envoyé avec succès !
                 </button>
             </div>

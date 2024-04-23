@@ -1,13 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "baloo";
+  src: url("@/assets/fonts/baloo.ttf");
+}
+@font-face {
+  font-family: "sonoma-regular";
+  src: url("@/assets/fonts/BRSonoma-Regular.otf") format("opentype");
+}
+
 * {
   margin: 0;
   left: 0;
-  font-family: "Poppins", "sans-serif";
+  font-family: "BR sonoma", "sans-serif";
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: #202020;

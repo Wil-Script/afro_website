@@ -119,6 +119,7 @@ export default defineI18nConfig(() => ({
       download_play: "Download on Google Play",
       download_ios: "Download on App Store",
       follow_us: `Follow us`,
+      soon:`Coming soon`
     },
     fr: {
       back: `Retour à l'accueil`,
@@ -242,6 +243,7 @@ export default defineI18nConfig(() => ({
       download_play: "Télécharger sur Google Play",
       download_ios: "Télécharger sur App Store",
       follow_us: `Suivez nous`,
+      soon:`Bientot disponible`
     },
   },
 }));

@@ -8,10 +8,10 @@
             <NuxtImg v-if="type == 'comm'" src="/community.png" class="w-8" alt="flysoft logo" />
         </div>
         <div class="whitespace-normal">
-            <span class="font-bold whitespace-normal sm:text-lg">
+            <span class=" font-baloo whitespace-normal sm:text-lg">
                 {{ title }}
             </span>
-            <p class="mt-2 text-sm whitespace-normal sm:text-base">
+            <p class="mt-2 text-sm whitespace-normal">
                 {{ desc }}
             </p>
         </div>

@@ -1,7 +1,7 @@
 <template>
     <section id="contact" class="mt-[90px] px-5 w-full sm:px-[10vw] grid gap-16 sm:grid-cols-2">
         <div class=" pt-20 flex flex-col w-full h-auto">
-            <span class="text-2xl font-bold">
+            <span class="text-2xl font-baloo">
                 {{ $t('question') }}
             </span>
             <p class="text-sm sm:text-base">
@@ -18,7 +18,7 @@
                         </svg>
                     </div>
                     <div class="flex flex-col h-full justify-center">
-                        <span class="font-bold text-sm sm:text-base">Telegram</span>
+                        <span class="font-baloo text-sm sm:text-base">Telegram</span>
                         <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>
@@ -34,7 +34,7 @@
                         </svg>
                     </div>
                     <div class="flex flex-col h-full justify-center">
-                        <span class="font-bold text-sm sm:text-base">Email</span>
+                        <span class="font-baloo text-sm sm:text-base">Email</span>
                         <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>

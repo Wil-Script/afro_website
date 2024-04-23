@@ -1,7 +1,7 @@
 <template>
     <div class="px-5 pt-8 pb-5 flex flex-col justify-between gap-3 rounded-lg bg-lightGreen">
         <div class="flex flex-col w-full gap-3">
-            <span class="font-bold text-lg">
+            <span class="font-baloo text-lg">
                 {{ $t('support_title') }}
             </span>
             <p class="text-sm sm:text-base">

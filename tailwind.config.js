@@ -47,7 +47,7 @@ export default {
       "2xl": "1536px",
     },
     fontFamily: {
-      heading: ["Poppins", "sans-serif"],
+      baloo: ["baloo"],
     },
   },
   plugins: [],

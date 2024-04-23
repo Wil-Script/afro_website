@@ -4,7 +4,7 @@
 <template>
     <section class=" mt-12 gap-y-4 flex flex-col w-full h-auto sm:px-[10vw] sm:mt-28">
         <div class=" px-5">
-            <span class="font-bold text-2xl">
+            <span class="font-baloo text-2xl">
                 {{ $t('more_than_app') }}
             </span>
             <div>
@@ -19,7 +19,7 @@
         </div>
         <div class="px-5 w-full h-auto mt-5 sm:hidden">
             <a href="#contact"
-                class="flex items-center justify-center w-full py-3 bg-white font-bold rounded-full border border-noir">
+                class="flex items-center justify-center w-full py-3 bg-white font-baloo rounded-full border border-noir">
                 {{ $t('waiting_list') }}
             </a>
         </div>

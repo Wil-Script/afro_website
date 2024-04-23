@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-[#eee]">
+        <div class="flex items-center justify-center text-white font-baloo text-sm w-full h-8 rounded-full bg-[#eee]">
         </div>
     </div>
     <div v-else-if="state == 'green'"
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-mainGreen">
+        <div class="flex items-center justify-center text-white font-baloo text-sm w-full h-8 rounded-full bg-mainGreen">
             {{ $t('start') }}
         </div>
     </div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-mainColor">
+        <div class="flex items-center justify-center text-white font-baloo text-sm w-full h-8 rounded-full bg-mainColor">
             {{ $t('start') }}
         </div>
     </div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center text-white font-bold text-sm w-full h-8 rounded-full bg-mainPurple">
+        <div class="flex items-center justify-center text-white font-baloo text-sm w-full h-8 rounded-full bg-mainPurple">
             {{ $t('start') }}
         </div>
     </div>

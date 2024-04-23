@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-auto py-8 bg-lightPurple rounded-lg overflow-hidden">
-        <h2 class="px-4 text-2xl font-bold">
+        <h2 class="px-4 text-2xl font-baloo">
             {{ $t('lesson_block_title') }}
         </h2>
         <p class="mt-1 px-4">

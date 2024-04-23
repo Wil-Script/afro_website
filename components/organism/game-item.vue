@@ -2,7 +2,7 @@
     <div v-if="state == 'game-one'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('game_title') }} 1
             </span>
             <span class="text-xs">
@@ -16,7 +16,7 @@
     <div v-else-if="state == 'game-two'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('game_title') }} 2
             </span>
             <span class="text-xs">
@@ -30,7 +30,7 @@
     <div v-else-if="state == 'game-three'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('game_title') }} 3
             </span>
             <span class="text-xs">
@@ -44,7 +44,7 @@
     <div v-else-if="state == 'game-four'"
         class="mr-2 py-4 inline-flex flex-col justify-between h-[260px] w-[220px] bg-white rounded-lg">
         <div class="px-4 flex flex-col w-full h-auto">
-            <span class="text-sm font-bold">
+            <span class="text-sm font-baloo">
                 {{ $t('game_title') }} 4
             </span>
             <span class="text-xs">

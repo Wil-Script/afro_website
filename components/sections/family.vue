@@ -26,7 +26,7 @@ export default {
         <div class="flex flex-col w-full h-auto sm:col-start-1 sm:col-end-4 sm:grid sm:grid-rows-2 gap-5 sm:h-full">
             <div class="hidden sm:flex sm:flex-col sm:w-full sm:h-full bg-white rounded-lg p-5">
                 <div class="flex w-full h-auto">
-                    <div class=" bg-mainGreen text-lg font-bold text-white font-bol px-5 py-2 rounded-full">
+                    <div class=" bg-mainGreen text-lg font-baloo text-white px-5 py-2 rounded-full">
                         {{ $t('imagine') }}
                     </div>
                 </div>
@@ -40,7 +40,7 @@ export default {
         </div>
         <div class="px-5 py-8 w-full h-auto bg-white rounded-lg sm:col-start-4 sm:col-end-9 sm:pb-32 sm:py-10 sm:px-10">
             <div class="flex flex-col w-full h-auto gap-1">
-                <span class="font-bold sm:text-xl">
+                <span class="font-baloo sm:text-xl">
                     {{ $t('forAll') }}
                 </span>
                 <p class=" text-grisTxt text-sm sm:text-base">
@@ -48,54 +48,43 @@ export default {
                 </p>
             </div>
             <div class="mt-5 p-4 rounded-[18px] flex flex-col w-full gap-1 border border-[#e5e5e5]">
-                <span class="font-bold sm:text-lg">{{ $t('child_title') }}</span>
+                <span class="font-baloo sm:text-lg">{{ $t('child_title') }}</span>
                 <p class="text-sm text-grisTxt sm:text-base">
                     {{ $t('child_p') }}
                 </p>
             </div>
             <div class="mt-2 p-4 rounded-[18px] flex flex-col w-full gap-1 border border-[#e5e5e5]">
-                <span class="font-bold sm:text-lg">{{ $t('adult_title') }}</span>
+                <span class="font-baloo sm:text-lg">{{ $t('adult_title') }}</span>
                 <p class="text-sm text-grisTxt sm:text-base">
                     {{ $t('adult_p') }}
                 </p>
             </div>
 
             <div class="mt-8 flex flex-wrap gap-1 sm:mt-14">
-                <!-- <div class=" w-2/3" @click="$emit('openContact')">
-                    <AtomsOutlinedBtn :libelle="$t('waiting_list')" />
-                </div> -->
-                <div class="w-full" @click="download()">
-                    <a href="/afrolingo-beta.apk" download="" target="_blank"
-                        class="flex items-center justify-center w-full py-3 bg-white font-bold rounded-full border border-noir">
-                        {{ $t('download_beta') }}
+                <div class="flex flex-col gap-2 w-full">
+                    <a href="https://play.google.com/store/apps/details?id=afrolingo.com.afrolingo&gl=FR"
+                        target="_blank"
+                        class="flex gap-2 items-center justify-center w-full py-3 bg-white font-baloo rounded-full border border-noir">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M239.82,114.18,72,18.16a16,16,0,0,0-16.12,0A15.68,15.68,0,0,0,48,31.87V224.13a15.68,15.68,0,0,0,7.92,13.67,16,16,0,0,0,16.12,0l167.78-96a15.76,15.76,0,0,0,0-27.64ZM160,139.31l18.92,18.92-88.5,50.66ZM90.4,47.1l88.53,50.67L160,116.69ZM193.31,150l-22-22,22-22,38.43,22Z">
+                            </path>
+                        </svg>
+                        {{ $t('download_play') }}
                     </a>
+                    <a href="#"
+                        class="flex gap-2 items-center justify-center w-full py-3 bg-white font-baloo rounded-full border border-noir cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z">
+                            </path>
+                        </svg>
+                        {{ $t('download_ios') }}
+                    </a>
+                    <span class=" text-xs"> *{{ $t('soon') }}</span>
                 </div>
-                <!-- <div class="flex gap-1 w-1/3">
-                    <a href="https://www.instagram.com/afrolingo.officiel"
-                        class="flex items-center justify-center w-12 h-12 rounded-lg border border-noir">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
-                            <path
-                                d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
-                                stroke="#141B34" stroke-width="1.5" />
-                            <path d="M17.5078 6.5L17.4988 6.5" stroke="#141B34" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <a href="https://www.tiktok.com/@afrolingo"
-                        class="flex items-center justify-center w-12 h-12 rounded-lg border border-noir">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
-                            <path
-                                d="M10.3938 11.7779C10.8038 11.8365 11.1838 11.5517 11.2424 11.1416C11.3011 10.7316 11.0162 10.3517 10.6062 10.293L10.3938 11.7779ZM17.5 10.25C17.9142 10.25 18.25 9.91421 18.25 9.5C18.25 9.08579 17.9142 8.75 17.5 8.75V10.25ZM14.25 6C14.25 5.58579 13.9142 5.25 13.5 5.25C13.0858 5.25 12.75 5.58579 12.75 6H14.25ZM12.75 14.5C12.75 16.0188 11.5188 17.25 10 17.25V18.75C12.3472 18.75 14.25 16.8472 14.25 14.5H12.75ZM10 17.25C8.48122 17.25 7.25 16.0188 7.25 14.5H5.75C5.75 16.8472 7.65279 18.75 10 18.75V17.25ZM7.25 14.5C7.25 12.9812 8.48122 11.75 10 11.75V10.25C7.65279 10.25 5.75 12.1528 5.75 14.5H7.25ZM10 11.75C10.1341 11.75 10.2656 11.7595 10.3938 11.7779L10.6062 10.293C10.4078 10.2646 10.2054 10.25 10 10.25V11.75ZM17.5 8.75C16.7254 8.75 15.8924 8.4308 15.2559 7.89923C14.62 7.36819 14.25 6.68835 14.25 6H12.75C12.75 7.24465 13.4135 8.31481 14.2944 9.05052C15.1746 9.7857 16.3416 10.25 17.5 10.25V8.75ZM12.75 6V14.5H14.25V6H12.75Z"
-                                fill="#141B34" />
-                        </svg>
-                    </a>
-                </div> -->
             </div>
         </div>
         <div class="w-full h-auto sm:col-start-9 sm:col-end-11 sm:grid sm:grid-rows-2 gap-5 sm:h-full">
