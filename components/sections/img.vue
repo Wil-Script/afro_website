@@ -35,8 +35,8 @@
 
         </div>
     </div>
-    <div class="mb-5 px-5 grid gap-4 w-full h-auto sm:hidden">
-        <div class=" my-10 flex flex-col sm:hidden w-full h-auto items-center gap-4 mt-10">
+    <div class=" mt-12 md:mt-0 mb-5 px-5 grid gap-4 w-full h-auto sm:hidden">
+        <!-- <div class=" my-10 flex flex-col sm:hidden w-full h-auto items-center gap-4 mt-10">
             <div class="">
                 {{ $t('follow_us') }}
             </div>
@@ -71,7 +71,7 @@
                     </span>
                 </a>
             </div>
-        </div>
+        </div> -->
         <div class="flex flex-col p-4 py-10 w-full h-auto rounded-lg bg-lightOrange">
             <span class="font-baloo text-3xl">
                 +15

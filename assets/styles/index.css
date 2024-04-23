@@ -9,14 +9,14 @@
   src: url("@/assets/fonts/baloo.ttf");
 }
 @font-face {
-  font-family: "sonoma-regular";
+  font-family: "sonoma";
   src: url("@/assets/fonts/BRSonoma-Regular.otf") format("opentype");
 }
 
 * {
   margin: 0;
   left: 0;
-  font-family: "BR sonoma", "sans-serif";
+  font-family: "sonoma";
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: #202020;

@@ -43,19 +43,19 @@ export default {
                 <span class="font-baloo sm:text-xl">
                     {{ $t('forAll') }}
                 </span>
-                <p class=" text-grisTxt text-sm sm:text-base">
+                <p class=" text-grisTxt">
                     {{ $t('forAll_p') }}
                 </p>
             </div>
             <div class="mt-5 p-4 rounded-[18px] flex flex-col w-full gap-1 border border-[#e5e5e5]">
                 <span class="font-baloo sm:text-lg">{{ $t('child_title') }}</span>
-                <p class="text-sm text-grisTxt sm:text-base">
+                <p class=" text-grisTxt sm:text-base">
                     {{ $t('child_p') }}
                 </p>
             </div>
             <div class="mt-2 p-4 rounded-[18px] flex flex-col w-full gap-1 border border-[#e5e5e5]">
                 <span class="font-baloo sm:text-lg">{{ $t('adult_title') }}</span>
-                <p class="text-sm text-grisTxt sm:text-base">
+                <p class=" text-grisTxt sm:text-base">
                     {{ $t('adult_p') }}
                 </p>
             </div>
@@ -83,7 +83,7 @@ export default {
                         </svg>
                         {{ $t('download_ios') }}
                     </a>
-                    <span class=" text-xs"> *{{ $t('soon') }}</span>
+                    <span class="text-sm md:text-xs"> *{{ $t('soon') }}</span>
                 </div>
             </div>
         </div>

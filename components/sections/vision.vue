@@ -17,12 +17,6 @@
             <OrganismVisionCard type="rich" :title="$t('rich_title')" :desc="$t('rich_p')" />
             <OrganismVisionCard type="comm" :title="$t('com_title')" :desc="$t('com_p')" />
         </div>
-        <div class="px-5 w-full h-auto mt-5 sm:hidden">
-            <a href="#contact"
-                class="flex items-center justify-center w-full py-3 bg-white font-baloo rounded-full border border-noir">
-                {{ $t('waiting_list') }}
-            </a>
-        </div>
     </section>
 </template>
 <style scoped></style>

@@ -4,7 +4,7 @@
             <span class="font-baloo text-lg">
                 {{ $t('support_title') }}
             </span>
-            <p class="text-sm sm:text-base">
+            <p class="">
                 {{ $t('support_p') }}
             </p>
         </div>

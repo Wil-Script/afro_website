@@ -4,37 +4,52 @@
             <span class="text-2xl font-baloo">
                 {{ $t('question') }}
             </span>
-            <p class="text-sm sm:text-base">
+            <p class="">
                 {{ $t('question_p') }}
             </p>
             <div class="mt-5 w-full h-auto flex flex-col gap-2">
                 <a href="https://t.me/afrolingo"
                     class="p-1 h-16 w-full flex gap-3 border border-[#e5e5e5] rounded-full">
                     <div class="h-full aspect-square rounded-full flex justify-center items-center bg-[#f5f5f5]">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                            viewBox="0 0 256 256">
                             <path
-                                d="M11.9854 15.4083L15.2268 19.0936C16.4277 20.4589 17.0282 21.1416 17.6567 20.9754C18.2852 20.8092 18.5008 19.9108 18.9318 18.1138L21.3229 8.1459C21.9868 5.37832 22.3187 3.99454 21.5808 3.312C20.843 2.62947 19.564 3.13725 17.0061 4.15282L5.13876 8.86449C3.09293 9.67674 2.07001 10.0829 2.00507 10.7808C1.99842 10.8522 1.99831 10.9241 2.00474 10.9955C2.06754 11.6937 3.08921 12.1033 5.13255 12.9223C6.05838 13.2934 6.5213 13.479 6.8532 13.8344C6.89052 13.8743 6.9264 13.9157 6.96078 13.9584C7.26658 14.3384 7.39709 14.8371 7.65808 15.8344L8.14653 17.701C8.4005 18.6715 8.52749 19.1568 8.86008 19.223C9.19267 19.2891 9.48225 18.8867 10.0614 18.0819L11.9854 15.4083ZM11.9854 15.4083L11.6676 15.0771C11.3059 14.7001 11.1251 14.5117 11.1251 14.2775C11.1251 14.0433 11.3059 13.8548 11.6676 13.4778L15.2406 9.75409"
-                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                d="M228.88,26.19a9,9,0,0,0-9.16-1.57L17.06,103.93a14.22,14.22,0,0,0,2.43,27.21L72,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L165,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L231.77,35A9,9,0,0,0,228.88,26.19ZM175.53,208,92.85,135.5l119-85.29Z">
+                            </path>
                         </svg>
                     </div>
                     <div class="flex flex-col h-full justify-center">
-                        <span class="font-baloo text-sm sm:text-base">Telegram</span>
+                        <span class="font-baloo">Telegram</span>
+                        <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
+                    </div>
+                </a>
+                <a href="https://twitter.com/AfroLingo_"
+                    class="p-1 h-16 w-full flex gap-3 border border-[#e5e5e5] rounded-full">
+                    <div class="h-full aspect-square rounded-full flex justify-center items-center bg-[#f5f5f5]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M215,219.85a8,8,0,0,1-7,4.15H160a8,8,0,0,1-6.75-3.71l-40.49-63.63L53.92,221.38a8,8,0,0,1-11.84-10.76l61.77-68L41.25,44.3A8,8,0,0,1,48,32H96a8,8,0,0,1,6.75,3.71l40.49,63.63,58.84-64.72a8,8,0,0,1,11.84,10.76l-61.77,67.95,62.6,98.38A8,8,0,0,1,215,219.85Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col h-full justify-center">
+                        <span class="font-baloo">Twitter</span>
                         <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>
                 <a href="mailto:philippejacques@afrolingo.org"
                     class="p-1 h-16 w-full flex gap-3 border border-[#e5e5e5] rounded-full">
                     <div class="h-full aspect-square rounded-full flex justify-center items-center bg-[#f5f5f5]">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"
-                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                            viewBox="0 0 256 256">
                             <path
-                                d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
-                                stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                                d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z">
+                            </path>
                         </svg>
                     </div>
                     <div class="flex flex-col h-full justify-center">
-                        <span class="font-baloo text-sm sm:text-base">Email</span>
+                        <span class="font-baloo">Email</span>
                         <p class="text-[10px] text-grisTxt text-sm">{{ $t('telegram_desc') }}</p>
                     </div>
                 </a>

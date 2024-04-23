@@ -29,18 +29,18 @@ export default {
     <header
         class=" px-4 pt-8 flex flex-col gap-y-8 justify-between w-full bg-mainColor md:pl-[7.5vw] md:pb-4 md:pt-4 sm:grid md:grid-cols-2 md:gap-16 md:pr-4">
         <div class="flex flex-col md:justify-center gap-y-2 w-full h-auto md:pt-10">
-            <h1 class="font-baloo text-3xl text-center text-[#2C1A09] md:text-4xl md:text-left font-baloo"
+            <h1 class="font-baloo text-3xl text-[#2C1A09] md:text-4xl text-left"
                 style="line-height: 44px;">
                 {{ $t('header_title') }}
             </h1>
-            <p class=" text-center text-sm md:text-base sm:text-left md:max-w-screen-sm md:mt-4">
+            <p class=" text-left md:max-w-screen-sm md:mt-4">
                 {{ $t('header_p') }}
             </p>
-            <div class=" flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 w-[90%] mt-10">
-                <div class="flex flex-col gap-1">
+            <div class=" flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 md:w-[90%] mt-10">
+                <div class="flex flex-col gap-1 mb-2 md:mb-0">
                     <a href="https://play.google.com/store/apps/details?id=afrolingo.com.afrolingo&gl=FR"
                         target="_blank"
-                        class="flex gap-2 items-center justify-center w-full py-3 bg-white text-noir text-sm font-semibold rounded-full">
+                        class="flex gap-2 items-center justify-center w-full py-3 bg-white text-noir font-baloo rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
                             viewBox="0 0 256 256">
                             <path
@@ -49,11 +49,11 @@ export default {
                         </svg>
                         {{ $t('download_play') }}
                     </a>
-                    <span class=" text-xs text-transparent"> *Déjà disponible</span>
+                    <span class=" hidden md:inline-block text-xs text-transparent"> *Déjà disponible</span>
                 </div>
-                <div class="flex flex-col gap-1">
+                <div class="flex flex-col items-center md:items-start gap-1">
                     <a href="#"
-                        class="flex gap-2 items-center justify-center w-full py-3 bg-transparent text-sm border border-noir text-noir font-semibold rounded-full cursor-not-allowed">
+                        class="flex gap-2 items-center justify-center w-full py-3 bg-transparent border border-noir text-noir font-baloo rounded-full cursor-not-allowed">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
                             viewBox="0 0 256 256">
                             <path
@@ -62,7 +62,7 @@ export default {
                         </svg>
                         {{ $t('download_ios') }}
                     </a>
-                    <span class=" text-xs"> *{{ $t('soon') }}</span>
+                    <span class=" text-sm md:text-xs"> *{{ $t('soon') }}</span>
                 </div>
             </div>
 
