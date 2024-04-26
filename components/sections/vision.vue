@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <section class=" mt-12 gap-y-4 flex flex-col w-full h-auto sm:px-[10vw] sm:mt-28">
+    <section class=" gap-y-4 flex flex-col w-full h-auto sm:px-[10vw]">
         <div class=" px-5">
             <span class="font-baloo text-2xl">
                 {{ $t('more_than_app') }}

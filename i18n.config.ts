@@ -5,11 +5,12 @@ export default defineI18nConfig(() => ({
     en: {
       back: "Back to home",
       total: "Africans languages available just for you.",
-      header_title: "Learn a language, discover a culture.",
+      header_title: "Learn a language, discover a culture: over 25 languages to discover.",
       header_p: `Immerse yourself in the world of African languages. Learn one and let yourself be transported by its sounds, rhythms and stories.`,
       waiting_list: "Join the exclusive list",
       join_us: "Join us",
-      persons: "persons",
+      download: "Downloads",
+      trans: "Traduire",
       question: "Any questions ?",
       question_p: `Contact us using one of the following methods, and we'll get back to you as soon as possible. as soon as possible.`,
       telegram_desc: `We'll have an instant conversation.`,
@@ -119,17 +120,20 @@ export default defineI18nConfig(() => ({
       download_play: "Download on Google Play",
       download_ios: "Download on App Store",
       follow_us: `Follow us`,
-      soon:`Coming soon`
+      soon:`Coming soon`,
+      now:`Download now`,
+      scan:`Scan to download`
     },
     fr: {
       back: `Retour à l'accueil`,
       total: "Langues africaines disponibles juste pour toi.",
-      header_title: "Apprendre une langue, découvrir une culture.",
+      header_title: "Apprendre une langue, découvrir une culture : +25 langues à découvrir",
       header_p: `Plongez dans l'univers des langues africaines. Apprenez-en une et laissez-vous transporter par ses sons, ses
         rythmes et ses histoires.`,
       waiting_list: "Rejoindre la liste exclusive",
       join_us: "Rejoignez-nous",
-      persons: "personnes",
+      download: "Téléchargements",
+      trans: "Translate",
       question: "Vous avez une question ?",
       question_p: `Contactez-nous en utilisant l'une des méthodes suivantes, et nous vous répondrons dans les plus brefs
             délais.`,
@@ -243,7 +247,9 @@ export default defineI18nConfig(() => ({
       download_play: "Télécharger sur Google Play",
       download_ios: "Télécharger sur App Store",
       follow_us: `Suivez nous`,
-      soon:`Bientot disponible`
+      soon:`Bientot disponible`,
+      now:`Télécharger maintenant`,
+      scan:`Scannez pour télécharger`
     },
   },
 }));

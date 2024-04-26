@@ -1,5 +1,5 @@
 <template>
-    <OrganismChapterLesson />
+    <OrganismChapterLesson  />
     <OrganismGameBlock />
     <OrganismEvolutionBlock />
 </template>

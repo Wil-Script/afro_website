@@ -41,10 +41,10 @@ export default {
 </script>
 <template>
     <OrganismMenu />
-    <OrganismHeader @openContact="showMail = true" />
-    <SectionsVision @openContact="showMail = true" />
-    <SectionsImg />
+    <OrganismHeader @openContact="showMail = true"/>
     <SectionsFeatures />
+    <SectionsVision @openContact="showMail = true" class="mt-12 sm:mt-28" />
+    <SectionsImg />
     <SectionsFamily @openContact="showMail = true" />
     <SectionsPartner />
     <SectionsContact />
