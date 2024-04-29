@@ -31,13 +31,13 @@
                 </Nuxt-link>
             </nav>
             <div class=" flex items-center gap-0">
-                <div class="w-[180px]" @click="$emit('openContact')">
+                <div class="w-[180px]">
                     <Nuxt-link to="/#contact"
                         class="flex items-center justify-center w-full py-3 bg-noir text-white font-baloo rounded-full">
                         {{ $t('contact_us') }}
                     </Nuxt-link>
                 </div>
-                <button @click="oneButton()" title="Traduire en français"
+                <button @click="oneButton()"
                     class=" ml-2 flex gap-2 items-center h-12 border border-noir p-2 px-5 rounded-[30px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewBox="0 0 256 256">
                         <path
