@@ -84,11 +84,10 @@ export default {
                         <div
                             class="flex gap-2 items-center w-full p-2 bg-transparent border border-noir text-noir font-baloo rounded-[13px]">
                             <div class="relative h-11 w-11">
-                                <img src="@/public/code-afrolingo-android.png" class="h-11" alt=""
-                                    style="filter: blur(2px);">
+                                <img src="@/public/qrcode.png" class="h-11" alt="">
                             </div>
                             <div class="flex flex-col ">
-                                <span class=" text-xs text-gray-900">{{ $t('soon') }}</span>
+                                <span class=" text-xs text-gray-900">{{ $t('scan') }}</span>
                                 <span class="font-baloo">Afrolingo iPhone</span>
                             </div>
                         </div>
