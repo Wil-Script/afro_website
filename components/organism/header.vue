@@ -65,7 +65,7 @@ export default {
                                 </path>
                             </svg>
                             <div class="flex flex-col text-noir">
-                                <span class=" text-xs">Bientot sur</span>
+                                <span class=" text-xs"> {{ $t('scan') }} Disponible sur</span>
                                 <span class=" font-baloo">{{ $t('download_ios') }}</span>
                             </div>
 
