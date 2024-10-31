@@ -56,7 +56,7 @@ export default {
                         </a>
                     </div>
                     <div class="flex md:hidden flex-col items-center md:items-start gap-1">
-                        <a href="#"
+                        <a href="https://apps.apple.com/fr/app/afrolingo/id6566188557"
                             class="flex gap-2 items-center justify-center w-full py-3 bg-transparent border border-noir  rounded-full cursor-not-allowed">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
                                 viewBox="0 0 256 256">

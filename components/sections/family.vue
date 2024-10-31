@@ -73,8 +73,8 @@ export default {
                         </svg>
                         {{ $t('download_play') }}
                     </a>
-                    <a href="#"
-                        class="flex gap-2 items-center justify-center w-full py-3 bg-white font-baloo rounded-full border border-noir cursor-not-allowed">
+                    <a href="https://apps.apple.com/fr/app/afrolingo/id6566188557"
+                        class="flex gap-2 items-center justify-center w-full py-3 bg-white font-baloo rounded-full border border-noir">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
                             viewBox="0 0 256 256">
                             <path
@@ -83,7 +83,7 @@ export default {
                         </svg>
                         {{ $t('download_ios') }}
                     </a>
-                    <span class="text-sm md:text-xs"> *{{ $t('soon') }}</span>
+                    <!-- <span class="text-sm md:text-xs"> *{{ $t('soon') }}</span> -->
                 </div>
             </div>
         </div>
